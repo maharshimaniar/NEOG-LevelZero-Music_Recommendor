@@ -1,0 +1,46 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid black;
+  background: lightgrey;
+}
+
+.bodyContent {
+  max-width: 600px;
+  margin: auto;
+}
+
+.genereButton {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.tile {
+  border: 2px solid slategrey;
+  margin: 2px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 70%;
+}
+
+.itemList {
+  margin-left: 3rem;
+}
+
+.tile {
+  text-align: left;
+}
+
+.tileHeader {
+  font-size: large;
+  font-weight: bold;
+}
+
+.tileContent {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
