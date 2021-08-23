@@ -2,8 +2,20 @@ import "./styles.css";
 import React, { useState } from "react";
 
 export default function App() {
-  const [songList, songListSet] = useState([]);
-  const [songRatings, songRatingSet] = useState([]);
+  const [songList, songListSet] = useState([
+    "Purple Haze by Jimi Hendrix",
+    "Whole Lotta Love by Led Zeppelin",
+    "Sympathy for the Devil by The Rolling Stones",
+    "Under Pressure by Queen & David Bowie",
+    "Baba O’Riley by The Who"
+  ]);
+  const [songRatings, songRatingSet] = useState([
+    "5/5",
+    "4/5",
+    "4/5",
+    "4/5",
+    "3/5"
+  ]);
   const itemListDict = {
     Rock: {
       "Purple Haze by Jimi Hendrix": "5/5",
@@ -37,11 +49,11 @@ export default function App() {
 
   function getButtonPressed(event) {
     var songList = itemListDict[event.target.innerHTML];
-    console.log(songList);
+    //console.log(songList);
     songListSet(Object.keys(songList));
     songRatingSet(Object.values(songList));
-    console.log(Object.keys(songList));
-    console.log(Object.values(songList));
+    //console.log(Object.keys(songList));
+    //console.log(Object.values(songList));
   }
 
   const itemList = Object.keys(itemListDict);
