@@ -1,4 +1,4 @@
-# Banana Speak
+# Music Recommender
 ### Shows the User Top-Rated Songs by Genere.
 <br/>
 
